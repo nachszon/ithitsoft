@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Hit Software List Test</title>
+    <title>IT Hit Software List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        iframe {
+            width: 90%;
+            max-width: 700px;
+            height: 750px;
+            border: none;
+        }
+        .fallback-link {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the IT Hit Software List!</h1>
-    <p>Vote for your favorite IT software.</p>
-    <a href="https://forms.gle/5RqN2Hz1gFTiNyfy8" target="_blank">Click here to vote!</a>
+    <h1>Vote for the Greatest IT Software!</h1>
+    <p>Enter your vote below:</p>
+
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclTLvGR3yAcwM8d3P6gyHUNkAZklJX5lXhNx3JTX68CPRmXg/viewform?embedded=true">
+        </iframe>
+        <p class="fallback-link">
+            If the form is not visible, click <a href="https://docs.google.com/forms/d/e/1FAIpQLSclTLvGR3yAcwM8d3P6gyHUNkAZklJX5lXhNx3JTX68CPRmXg/viewform" target="_blank">here</a>.
+        </p>
+    </div>
 </body>
 </html>
