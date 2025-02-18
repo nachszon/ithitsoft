@@ -3,57 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Hit Software List</title>
+    <title>IT Software Hit List</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
+            background: linear-gradient(135deg, #ff6f61, #ffcc5c, #47b8e0, #9b59b6);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
         .logo {
             width: 100%;
-            max-width: 400px; /* Dopasuj szerokość */
-            margin-bottom: 10px; /* Odstęp pod obrazkiem */
+            max-width: 400px;
+            margin: 20px 0;
         }
-        .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .vote-button {
+            display: inline-block;
+            background: #ffcc5c;
+            color: #222;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .vote-button:hover {
+            background: #ff6f61;
+            transform: scale(1.1);
         }
         iframe {
             width: 90%;
             max-width: 700px;
             height: 750px;
             border: none;
+            margin-top: 20px;
         }
-        .fallback-link {
-            margin-top: 10px;
-            font-size: 16px;
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <!-- 🔹 Dodany obrazek nagłówka -->
-    <img src="logo.jpg" alt="IT Hit Software List" class="logo">
-
-    <h1>Vote for the Greatest IT Software!</h1>
-    <p>Enter your vote below:</p>
-
-    <div class="form-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclTLvGR3yAcwM8d3P6gyHUNkAZklJX5lXhNx3JTX68CPRmXg/viewform?embedded=true">
-        </iframe>
-        <p class="fallback-link">
-            If the form is not visible, click <a href="https://forms.gle/Eb8WGJdHsqYyPzfJ7" target="_blank">here</a>.
-        </p>
+    <img src="logo.png" alt="IT Hit Software List" class="logo">
+    <h1>🎶 Vote for the Greatest IT Software! 🎵</h1>
+    <div class="container">
+        <p>Help us create the ultimate IT Software Hit List! Choose your favorite software and see if it makes it to the top.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSclTLvGR3yAcwM8d3P6gyHUNkAZklJX5lXhNx3JTX68CPRmXg/viewform" class="vote-button" target="_blank">🎤 Vote Now!</a>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclTLvGR3yAcwM8d3P6gyHUNkAZklJX5lXhNx3JTX68CPRmXg/viewform?embedded=true"></iframe>
     </div>
+    <p class="footer">© 2025 IT Hit Software List. All rights reserved.</p>
 </body>
 </html>
